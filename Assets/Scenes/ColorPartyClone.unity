@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 363806977}
-  - component: {fileID: 363806978}
+  - component: {fileID: 363806980}
   - component: {fileID: 363806979}
   m_Layer: 0
   m_Name: Stage
@@ -289,7 +289,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 941958148}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &363806978
+--- !u!114 &363806979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363806976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a042b8d8bf23a534c92c16f064f5d862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tile: {fileID: 2900551196179742414, guid: c296e67c9ef622c4fb7f904b29a3c8d8, type: 3}
+--- !u!65 &363806980
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -310,18 +323,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &363806979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363806976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a042b8d8bf23a534c92c16f064f5d862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,8 +555,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4656736243971778515}
   - {fileID: 941958148}
+  - {fileID: 4656736243971778515}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2039932939
@@ -588,7 +589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8970627176590395593, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.32
       objectReference: {fileID: 0}
     - target: {fileID: 8970627176590395593, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
       propertyPath: m_LocalPosition.z
