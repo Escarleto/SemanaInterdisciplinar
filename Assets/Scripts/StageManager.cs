@@ -1,25 +1,20 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class StageManager : MonoBehaviour
 {
     public GameObject Tile;
-    private BoxCollider StageArea;
 
     void Start()
     {
-        StageArea = GetComponent<BoxCollider>();
-
-        for (int i = 0; i < StageArea.size.x; i++)
+        for (int i = 0; i < 5; i++)
         {
-            for (int j = 0; j < StageArea.size.z; j++)
+            for (int j = 0; j < 7; j++)
             {
-                Vector3 position = new Vector3(
-                    transform.position.x - StageArea.size.x / 2 + i + 0.5f,
-                    0f,
-                    transform.position.z - StageArea.size.z / 2 + j + 0.5f
-                );
-                Instantiate(Tile, position, Quaternion.identity, transform);
+                GameObject newTile = Instantiate(Tile, transform);
+                newTile.transform.localPosition = new Vector3(i * 2.55f, 0f, j * 2.55f);
+                newTile.GetComponent<Tile>().ChangeColor();
             }
         }
     }
