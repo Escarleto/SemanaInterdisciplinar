@@ -15,7 +15,7 @@ public class CanvasManager : MonoBehaviour
             for (int j = 0; j < 7; j++)
             {
                 GameObject newTile = Instantiate(Tile, transform);
-                newTile.transform.localPosition = new Vector3(i * 2.56f, 0f, j * 2.56f);
+                newTile.transform.localPosition = new Vector3(i * 2f, 0f, j * 2f);
                 newTile.GetComponent<Tile>().ChangeColor();
             }
         }
@@ -37,7 +37,7 @@ public class CanvasManager : MonoBehaviour
     }
 
     public void HideUnsafeColors()
-    { 
+    {
         Color safeColor = GameManager.Instance.SafeColor;
         foreach (Transform Tile in transform)
         {
