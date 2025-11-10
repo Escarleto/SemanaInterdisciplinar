@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Vector2 H_move;
     private Transform Mesh;
-    private float Speed = 10f;
+    private float Speed = 7.5f;
 
     void Start()
     {

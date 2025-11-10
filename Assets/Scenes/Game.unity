@@ -269,7 +269,11 @@ GameObject:
   - component: {fileID: 363806979}
   - component: {fileID: 363806978}
   m_Layer: 0
+<<<<<<< Updated upstream:Assets/Scenes/ColorPartyClone.unity
   m_Name: Cube
+=======
+  m_Name: Canvas
+>>>>>>> Stashed changes:Assets/Scenes/Game.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,6 +323,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363806976}
   m_Enabled: 1
+<<<<<<< Updated upstream:Assets/Scenes/ColorPartyClone.unity
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -364,6 +369,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363806976}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a042b8d8bf23a534c92c16f064f5d862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> Stashed changes:Assets/Scenes/Game.unity
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +569,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941958147}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream:Assets/Scenes/ColorPartyClone.unity
+=======
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -566,6 +579,62 @@ Transform:
   - {fileID: 363806977}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2039932937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2039932938}
+  - component: {fileID: 2039932939}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2039932938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039932937}
+  serializedVersion: 2
+>>>>>>> Stashed changes:Assets/Scenes/Game.unity
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+<<<<<<< Updated upstream:Assets/Scenes/ColorPartyClone.unity
+  m_Children:
+  - {fileID: 363806977}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2039932939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039932937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f72328dec1c7c42a0a71a8237d0307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tile: {fileID: 2900551196179742414, guid: c296e67c9ef622c4fb7f904b29a3c8d8, type: 3}
+  CanvasManager: {fileID: 363806979}
+  SafeColor: {r: 0, g: 0, b: 0, a: 0}
+  Level: 1
+>>>>>>> Stashed changes:Assets/Scenes/Game.unity
 --- !u!1001 &4656736243971778514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -574,17 +643,48 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 467949228777661125, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
+      propertyPath: m_PreviewTimeScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1613085240937590870, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
       propertyPath: Cam
       value: 
       objectReference: {fileID: 330585545}
+<<<<<<< Updated upstream:Assets/Scenes/ColorPartyClone.unity
+=======
+    - target: {fileID: 5723916675267996314, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
+      propertyPath: m_ImplicitCom
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723916675267996314, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
+      propertyPath: m_ImplicitTensor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723916675267996314, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
+      propertyPath: m_InertiaTensor.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723916675267996314, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
+      propertyPath: m_InertiaTensor.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5723916675267996314, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
+      propertyPath: m_InertiaTensor.z
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes:Assets/Scenes/Game.unity
     - target: {fileID: 8970627176590395593, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8970627176590395593, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< Updated upstream:Assets/Scenes/ColorPartyClone.unity
       value: 0
+=======
+      value: 0.17
+>>>>>>> Stashed changes:Assets/Scenes/Game.unity
       objectReference: {fileID: 0}
     - target: {fileID: 8970627176590395593, guid: c4b012caf0fcd794a887cd35affc0f73, type: 3}
       propertyPath: m_LocalPosition.z
@@ -631,6 +731,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2039932938}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 330585546}
