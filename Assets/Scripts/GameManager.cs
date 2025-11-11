@@ -34,8 +34,6 @@ public class GameManager : MonoBehaviour
     {
         Vector3[] SpawnPoints = new Vector3[]
         {
-            new Vector3(2.56f, 1f, 2.56f),
-            new Vector3(7.68f, 1f, 2.56f),
             new Vector3(1.19f, 1f, 6.11f),
             new Vector3(10.17f, 1f, 6.11f),
             new Vector3(1.19f, 1f, -6.11f),
