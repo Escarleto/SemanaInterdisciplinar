@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Threading;
+using TreeEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     private CharacterController Body;
-    private InputSystem_Actions input;
 
     private Vector3 SpawnPoint;
     private Vector2 H_Input;
@@ -16,26 +16,6 @@ public class PlayerController : MonoBehaviour
     private float Speed = 4f;
     private bool Jumping = false;
     private bool CanDash = true;
-
-    void OnEnable()
-    {
-        input = new InputSystem_Actions();
-        input.Enable();
-
-        input.Player.Move.performed += ctx => Move(ctx);
-        input.Player.Move.canceled += ctx => Move(ctx);
-        input.Player.Jump.performed += ctx => Jump(ctx);
-        input.Player.Dash.performed += ctx => Dash(ctx);
-    }
-
-    void OnDisable()
-    {
-        input.Player.Move.performed -= ctx => Move(ctx);
-        input.Player.Move.canceled -= ctx => Move(ctx);
-        input.Player.Jump.performed -= ctx => Jump(ctx);
-        input.Player.Dash.performed -= ctx => Dash(ctx);
-        input.Disable();
-    }
 
     void Start()
     {
@@ -118,4 +98,18 @@ public class PlayerController : MonoBehaviour
             CanDash = true;
         }
     }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("Player"))
+        {
+            PlayerController otherPlayer = hit.gameObject.GetComponent<PlayerController>();
+            if (otherPlayer.Speed > 4f)
+            {
+
+            }
+
+        }
+    }
+
 }

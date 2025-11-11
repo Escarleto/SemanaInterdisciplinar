@@ -13,7 +13,6 @@ public class Tile : MonoBehaviour
 
     public void ChangeColor()
     {
-        Color randomColor = Random.ColorHSV();
         Dictionary<string, Color> colorList = GameManager.Instance.ColorList;
         Color randomColor = colorList[
             new List<string>(colorList.Keys)[Random.Range(0, colorList.Count)]

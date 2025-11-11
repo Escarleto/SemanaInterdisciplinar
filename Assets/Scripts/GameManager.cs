@@ -32,12 +32,16 @@ public class GameManager : MonoBehaviour
 
     public void OnPlayerJoined(PlayerInput player)
     {
-        Debug.Log($"Player Joined: {player.playerIndex}");
         Vector3[] SpawnPoints = new Vector3[]
         {
             new Vector3(2.56f, 1f, 2.56f),
             new Vector3(7.68f, 1f, 2.56f),
+            new Vector3(1.19f, 1f, 6.11f),
+            new Vector3(10.17f, 1f, 6.11f),
+            new Vector3(1.19f, 1f, -6.11f),
+            new Vector3(10.17f, 1f, -6.11f),
         };
+
         int Index = PlayerManager.playerCount - 1;
         player.transform.position = SpawnPoints[Index];
     }
