@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour
         var controller = player.GetComponent<PlayerController>();
         if (!Players.Contains(controller))
         {
-            controller.CanRespawn = false;
             Players.Add(controller);
         }
     }
