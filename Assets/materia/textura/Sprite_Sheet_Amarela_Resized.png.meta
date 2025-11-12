@@ -1,0 +1,1083 @@
+fileFormatVersion: 2
+guid: 1bcbedf9f107f5d4e9b22a30b3e870b3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1646
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a423888bad2c8543a5f69e9516c21cb
+      internalID: 273563092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_1
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1646
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2464a5e84c3e674eb6cdcdd9c51334d
+      internalID: -365260408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_2
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1646
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ff916d563fc5441b3b0bd28586ec50
+      internalID: -614260262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_3
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1646
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb57b2893a8a1747961ccd89b567bee
+      internalID: 788996672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_4
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 1646
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8647977b11cfa4f9533dc1276de22c
+      internalID: 449142046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_5
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 1646
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9c5e9ef2eb68a4c9d082e2d9c2c43a
+      internalID: -951217220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_6
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 1646
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b99e1a1cfd375047bffadcbcb9efc88
+      internalID: 1028906939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1317
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1ded94fade57c48a9fd4c5384a5599
+      internalID: 2039944301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_8
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1317
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3777f9eceb87e90419c87d76cc0e8af0
+      internalID: 2065317176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_9
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1317
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc984e7f92abfb043adfb47cb10aaabf
+      internalID: -1248142286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_10
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1317
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3712fdea7867fe74f9dedf1a8270c00d
+      internalID: -289304981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_11
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 1317
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e31ae3180516442be33116bedce630
+      internalID: -1839755351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_12
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 1317
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e766b24894a8194b98ed50c01158de9
+      internalID: -2026703413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_13
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 1317
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1050dd414ea29e47a87cbe3ed385a46
+      internalID: 2118157128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 988
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46227d44f1cd6f4098f0d7876135940
+      internalID: 1132457521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_15
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 988
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b2ce5c16a90614ab6d9169273028d3
+      internalID: -1622307218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_16
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 988
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d470b6f9f918c9948be457859b5e7b51
+      internalID: -1348730697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_17
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 988
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78f724f82f482a46a6e75a520eba0a6
+      internalID: -957042261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_18
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 988
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64a9f9a341053f4fab28e7399ae8bdd
+      internalID: 1139243246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_19
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 988
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04d7574c1a614746afa142b065f2b1e
+      internalID: -242443200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_20
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 988
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6154ccfe679bd5743a0fa9c5c00d76cc
+      internalID: 9192291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 659
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5464aea19825ce84a9f2b7ba6b976f03
+      internalID: -552763524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_22
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 659
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690ded81e5d4aae4aa39be0b6ae68aa7
+      internalID: -270714940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_23
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 659
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8622a9541e56aa9469cac740e7082984
+      internalID: 1966590809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_24
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 659
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b4b041815a3d44aa25a308edb10628
+      internalID: 46152777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_25
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 659
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4797c862a0fdcc34a8be9fdfddbc2116
+      internalID: -30234831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_26
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 659
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e2631a06265584fab0ccb8f286b931
+      internalID: -1884732712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_27
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 659
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93813985bb7d3cc439b8712dc5ce23a5
+      internalID: 1197477389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6843983fde4c5cb4280e9e202222b2c0
+      internalID: -240436061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_29
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 330
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d43e78d90b61746aecd96696c084a2
+      internalID: 1552118310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_30
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 330
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a2193010ad3f8439eae0a7df721a02
+      internalID: -1085979226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_31
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 330
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cae4d88075c3945a57262c0d5f79b7
+      internalID: -465172379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_32
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 330
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77ea51a12f573442a9a5ba4c05d3029
+      internalID: 1026135384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_33
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 330
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539ed9d7157ba25469ade04f5a5f5f65
+      internalID: 190818651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_34
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 330
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291c4e1db252e99409529f6359a9101c
+      internalID: 728460716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e07dca3b23738947a2fe04235f736b3
+      internalID: 505592179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_36
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a17fcda2ffe66b4a865595185508e72
+      internalID: -1645608094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_37
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc182f1822b30b4fb5acfde54471450
+      internalID: -1574810372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_38
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d67085aa824b1438c4e2306a2ce765
+      internalID: -1293981990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_39
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 1
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ef2844d30c80d45a069dee180be2c7
+      internalID: -218705375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_40
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 1
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c84506b1b304324a8ffe5176368c227
+      internalID: 1053526416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Amarela_Resized_41
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 1
+        width: 584
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24c302e4b879714591cec460f4c8bfb
+      internalID: 966887062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 99cc46ea03ee47243b7906fb53f7acc8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sprite_Sheet_Amarela_Resized_0: 273563092
+      Sprite_Sheet_Amarela_Resized_1: -365260408
+      Sprite_Sheet_Amarela_Resized_10: -289304981
+      Sprite_Sheet_Amarela_Resized_11: -1839755351
+      Sprite_Sheet_Amarela_Resized_12: -2026703413
+      Sprite_Sheet_Amarela_Resized_13: 2118157128
+      Sprite_Sheet_Amarela_Resized_14: 1132457521
+      Sprite_Sheet_Amarela_Resized_15: -1622307218
+      Sprite_Sheet_Amarela_Resized_16: -1348730697
+      Sprite_Sheet_Amarela_Resized_17: -957042261
+      Sprite_Sheet_Amarela_Resized_18: 1139243246
+      Sprite_Sheet_Amarela_Resized_19: -242443200
+      Sprite_Sheet_Amarela_Resized_2: -614260262
+      Sprite_Sheet_Amarela_Resized_20: 9192291
+      Sprite_Sheet_Amarela_Resized_21: -552763524
+      Sprite_Sheet_Amarela_Resized_22: -270714940
+      Sprite_Sheet_Amarela_Resized_23: 1966590809
+      Sprite_Sheet_Amarela_Resized_24: 46152777
+      Sprite_Sheet_Amarela_Resized_25: -30234831
+      Sprite_Sheet_Amarela_Resized_26: -1884732712
+      Sprite_Sheet_Amarela_Resized_27: 1197477389
+      Sprite_Sheet_Amarela_Resized_28: -240436061
+      Sprite_Sheet_Amarela_Resized_29: 1552118310
+      Sprite_Sheet_Amarela_Resized_3: 788996672
+      Sprite_Sheet_Amarela_Resized_30: -1085979226
+      Sprite_Sheet_Amarela_Resized_31: -465172379
+      Sprite_Sheet_Amarela_Resized_32: 1026135384
+      Sprite_Sheet_Amarela_Resized_33: 190818651
+      Sprite_Sheet_Amarela_Resized_34: 728460716
+      Sprite_Sheet_Amarela_Resized_35: 505592179
+      Sprite_Sheet_Amarela_Resized_36: -1645608094
+      Sprite_Sheet_Amarela_Resized_37: -1574810372
+      Sprite_Sheet_Amarela_Resized_38: -1293981990
+      Sprite_Sheet_Amarela_Resized_39: -218705375
+      Sprite_Sheet_Amarela_Resized_4: 449142046
+      Sprite_Sheet_Amarela_Resized_40: 1053526416
+      Sprite_Sheet_Amarela_Resized_41: 966887062
+      Sprite_Sheet_Amarela_Resized_5: -951217220
+      Sprite_Sheet_Amarela_Resized_6: 1028906939
+      Sprite_Sheet_Amarela_Resized_7: 2039944301
+      Sprite_Sheet_Amarela_Resized_8: 2065317176
+      Sprite_Sheet_Amarela_Resized_9: -1248142286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: 776685d5de948714389009418c705936
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 663
+        height: 528
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc66b6ad6ca7ac45a9afafdc04b9851
+      internalID: -1925488473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_0
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 0
+        width: 605
+        height: 528
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5117813af3084254dbe95b1bae432baa
+      internalID: 592167042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_2
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 0
+        width: 604
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08492e225ae9ee148a684fd1a3263af5
+      internalID: 560108687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_3
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 0
+        width: 619
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0b75febe233ee4d8bb2933ba49bd1d
+      internalID: 1432968461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_4
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 0
+        width: 708
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97401ad10ed36a4cbe610ad7e069269
+      internalID: -490970264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_5
+      rect:
+        serializedVersion: 2
+        x: 4921
+        y: 0
+        width: 692
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0b376c0f4219946b3a86ddd0c7163e
+      internalID: 1237515373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_6
+      rect:
+        serializedVersion: 2
+        x: 5905
+        y: 0
+        width: 649
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516ced57bfe3f1548a67af36d7f0dc6c
+      internalID: -103785409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_7
+      rect:
+        serializedVersion: 2
+        x: 6866
+        y: 0
+        width: 663
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e512e811a47d5047852ad7d4c4b9426
+      internalID: 580776838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_8
+      rect:
+        serializedVersion: 2
+        x: 7807
+        y: 0
+        width: 708
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00383d9defc21414da386a36b69146d0
+      internalID: -31897052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_9
+      rect:
+        serializedVersion: 2
+        x: 8754
+        y: 0
+        width: 707
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b024b65e1df8cbb4793909c7896507cb
+      internalID: 1395745157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_10
+      rect:
+        serializedVersion: 2
+        x: 9762
+        y: 0
+        width: 618
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7a6f4bfe9a72249b1f083cdaa1c18a
+      internalID: 794798117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_11
+      rect:
+        serializedVersion: 2
+        x: 10643
+        y: 0
+        width: 781
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812fa77bd1f8a8f4c83ce7b94e7b8c40
+      internalID: -1619937683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_12
+      rect:
+        serializedVersion: 2
+        x: 11622
+        y: 0
+        width: 737
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b776877f71272e43ac3b8a2e7d5185f
+      internalID: -1564481381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_13
+      rect:
+        serializedVersion: 2
+        x: 12618
+        y: 0
+        width: 663
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd932b93db74c9a49879aa8c6a556f64
+      internalID: 919958463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_14
+      rect:
+        serializedVersion: 2
+        x: 13558
+        y: 0
+        width: 707
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0e4e3c3357bea44b76924f2bc07e2c
+      internalID: -1416151850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_15
+      rect:
+        serializedVersion: 2
+        x: 14475
+        y: 0
+        width: 766
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5403004, y: 0.5081667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6e5de32608d3b4e9ccf64ed8682b94
+      internalID: 1059321316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_16
+      rect:
+        serializedVersion: 2
+        x: 15462
+        y: 0
+        width: 751
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e1e06dd288c2e48801bb4d7622de53
+      internalID: -621851981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_17
+      rect:
+        serializedVersion: 2
+        x: 16472
+        y: 0
+        width: 633
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12c168506a1116409b99de3800bf844
+      internalID: 2008555098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_18
+      rect:
+        serializedVersion: 2
+        x: 17447
+        y: 0
+        width: 604
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840429e09c8938d4fa26848ffb5b50d5
+      internalID: -763959707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_19
+      rect:
+        serializedVersion: 2
+        x: 18343
+        y: 0
+        width: 736
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc3d196cd7d46b4f93edc4ecd7a7097
+      internalID: 115187034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Bola_Vermelha_20
+      rect:
+        serializedVersion: 2
+        x: 19294
+        y: 0
+        width: 766
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34252d2ee7e2334cb773af46bf99ed8
+      internalID: -2069814019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 011f70dd37aac1b4aa161891b4a6d7e4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite_sheet_Bola_Vermelha_0: 592167042
+      sprite_sheet_Bola_Vermelha_1: -1925488473
+      sprite_sheet_Bola_Vermelha_10: 794798117
+      sprite_sheet_Bola_Vermelha_11: -1619937683
+      sprite_sheet_Bola_Vermelha_12: -1564481381
+      sprite_sheet_Bola_Vermelha_13: 919958463
+      sprite_sheet_Bola_Vermelha_14: -1416151850
+      sprite_sheet_Bola_Vermelha_15: 1059321316
+      sprite_sheet_Bola_Vermelha_16: -621851981
+      sprite_sheet_Bola_Vermelha_17: 2008555098
+      sprite_sheet_Bola_Vermelha_18: -763959707
+      sprite_sheet_Bola_Vermelha_19: 115187034
+      sprite_sheet_Bola_Vermelha_2: 560108687
+      sprite_sheet_Bola_Vermelha_20: -2069814019
+      sprite_sheet_Bola_Vermelha_3: 1432968461
+      sprite_sheet_Bola_Vermelha_4: -490970264
+      sprite_sheet_Bola_Vermelha_5: 1237515373
+      sprite_sheet_Bola_Vermelha_6: -103785409
+      sprite_sheet_Bola_Vermelha_7: 580776838
+      sprite_sheet_Bola_Vermelha_8: -31897052
+      sprite_sheet_Bola_Vermelha_9: 1395745157
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
