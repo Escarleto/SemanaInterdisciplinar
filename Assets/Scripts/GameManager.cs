@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     {
         foreach (PlayerController player in Players)
         {
-            player.Respawn();
+            player.HP_Handler();
         }
     }
 

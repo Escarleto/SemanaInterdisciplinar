@@ -14,16 +14,15 @@ public class PlayerController : MonoBehaviour
     private Vector2 DashDir = Vector2.right;
     private float V_Move;
     private float Speed = 4f;
+    public int HP = 3;
     private bool Jumping = false;
     private bool CanDash = true;
-    public bool CanRespawn = false;
     private bool Stunned = false;
 
     void Start()
     {
         Body = GetComponent<CharacterController>();
         SpawnPoint = transform.position;
-        CanRespawn = false;
     }
 
     void Update()
@@ -99,21 +98,29 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Respawn()
+    public void HP_Handler()
     {
-        if(transform.position.y < -30f)
+        if (HP > 0)
         {
-            Body.enabled = false;
-            transform.position = SpawnPoint;
-            V_Move = 0f;
-            H_Input = Vector2.zero;
-            MoveDir = Vector2.zero;
-            DashDir = Vector2.right;
-            Speed = 4f;
-            CanDash = true;
-            Jumping = false;
-            Stunned = false;
-            Body.enabled = true;
+            if (transform.position.y < -30f)
+            {
+                HP -= 1;
+                Body.enabled = false;
+                transform.position = SpawnPoint;
+                V_Move = 0f;
+                H_Input = Vector2.zero;
+                MoveDir = Vector2.zero;
+                DashDir = Vector2.right;
+                Speed = 4f;
+                CanDash = true;
+                Jumping = false;
+                Stunned = false;
+                Body.enabled = true;
+            }
+        }
+        else
+        {
+            gameObject.SetActive(false);
         }
     }
 
