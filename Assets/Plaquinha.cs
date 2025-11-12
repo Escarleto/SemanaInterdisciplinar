@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Plaquinha : MonoBehaviour
 {
-    public GameObject texto;
-    public GameObject imagem_do_quadro;
+    public GameObject Splash;
     private TextMeshPro textmesh;
     public Color safecolor;
 
@@ -22,7 +21,7 @@ public class Plaquinha : MonoBehaviour
 
         safecolor = SafeColor;
 
-        texto.GetComponent<TextMeshProUGUI>().color = SafeColor;
+        Splash.GetComponent<SpriteRenderer>().color = SafeColor;
 
     }
 }
