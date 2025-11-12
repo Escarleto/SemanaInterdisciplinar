@@ -1,16 +1,19 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UIElements;
 using Newtonsoft.Json.Bson;
 using UnityEngine.SceneManagement;
-using UnityEngine.SceneManagement;
+
 
 public class StartButtonScript : MonoBehaviour
 {
     private UIDocument _document;
 
-    private Button _button;
+    private Button _buttonStart;
+
+    private Button _buttonInfo;
+
+    private VisualElement _tutorial;
 
 
 
@@ -19,13 +22,19 @@ public class StartButtonScript : MonoBehaviour
     {
         _document = GetComponent<UIDocument>();
 
-        _button = _document.rootVisualElement.Q("ButtonStart") as Button;
-        _button.RegisterCallback<ClickEvent>(OnPlayGameClick);
+        _buttonStart = _document.rootVisualElement.Q("ButtonStart") as Button;
+        _buttonInfo = _document.rootVisualElement.Q("ButtonInfo") as Button;
+
+        _buttonStart.RegisterCallback<ClickEvent>(OnPlayGameClick);
+        _buttonInfo.RegisterCallback<ClickEvent>(OnInfoClick);
+
+        _tutorial = _document.rootVisualElement.Q("Tutorial");
     }
 
     private void OnDisable()
     {
-        _button.UnregisterCallback<ClickEvent>(OnPlayGameClick);
+        _buttonStart.UnregisterCallback<ClickEvent>(OnPlayGameClick);
+        _buttonInfo.UnregisterCallback<ClickEvent>(OnInfoClick);
     }
 
 
@@ -33,5 +42,10 @@ public class StartButtonScript : MonoBehaviour
     {
         Debug.Log("Pressed Start");
         SceneManager.LoadScene("ColorPartyClone");
+    }
+    private void OnInfoClick(ClickEvent evt)
+    {
+        Debug.Log("Pressed Info");
+        _tutorial.style.display = DisplayStyle.Flex;
     }
 }

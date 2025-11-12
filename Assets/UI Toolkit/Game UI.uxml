@@ -1,0 +1,3 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; position: absolute; height: 213px; width: 205px; background-image: url(&quot;project://database/Assets/Sprites/Cora%C3%A7%C3%A3o%20Sprite%20Sheet.png?fileID=2006035858&amp;guid=45139e5516592cb44bef011c7ae6515f&amp;type=3#Coração Sprite Sheet_0&quot;);" />
+</ui:UXML>
