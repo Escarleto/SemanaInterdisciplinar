@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     private PlayerInputManager PlayerManager;
 
+    public List<PlayerController> Players = new List<PlayerController>();
     public GameObject Tile;
     public StageManager CanvasManager;
     public Color SafeColor;
@@ -34,14 +35,21 @@ public class GameManager : MonoBehaviour
     {
         Vector3[] SpawnPoints = new Vector3[]
         {
-            new Vector3(1.19f, 1f, 6.11f),
-            new Vector3(10.17f, 1f, 6.11f),
-            new Vector3(1.19f, 1f, -6.11f),
-            new Vector3(10.17f, 1f, -6.11f),
+            new Vector3(1.19f, 2f, 8.88f),
+            new Vector3(10.17f, 2f, 8.88f),
+            new Vector3(1.19f, 2f, -6.11f),
+            new Vector3(10.17f, 2f, -6.11f),
         };
 
         int Index = PlayerManager.playerCount - 1;
         player.transform.position = SpawnPoints[Index];
+
+        var controller = player.GetComponent<PlayerController>();
+        if (!Players.Contains(controller))
+        {
+            controller.CanRespawn = false;
+            Players.Add(controller);
+        }
     }
 
     public void NewSafeColor()
@@ -51,6 +59,14 @@ public class GameManager : MonoBehaviour
         ];
 
         CreateTimer(5f, CanvasManager.HideUnsafeColors);
+    }
+
+    public void PlayerRespawn()
+    {
+        foreach (PlayerController player in Players)
+        {
+            player.Respawn();
+        }
     }
 
     public void CreateTimer(float duration, Action callback)

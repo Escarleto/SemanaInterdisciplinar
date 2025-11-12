@@ -16,16 +16,19 @@ public class PlayerController : MonoBehaviour
     private float Speed = 4f;
     private bool Jumping = false;
     private bool CanDash = true;
+    public bool CanRespawn = false;
     private bool Stunned = false;
 
     void Start()
     {
         Body = GetComponent<CharacterController>();
         SpawnPoint = transform.position;
+        CanRespawn = false;
     }
 
     void Update()
     {
+
         if (CanDash)
         {
             MoveDir = (H_Input * Speed);
@@ -50,10 +53,18 @@ public class PlayerController : MonoBehaviour
         {
             V_Move += Physics.gravity.y * Time.deltaTime;
         }
+    }
 
-        if (transform.position.y < -10f)
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("Player"))
         {
-            transform.position = SpawnPoint;
+            PlayerController otherPlayer = hit.gameObject.GetComponent<PlayerController>();
+            if (!CanDash)
+            {
+                Vector3 knockback = (hit.gameObject.transform.position - transform.position).normalized;
+                otherPlayer.StartCoroutine(otherPlayer.KnockbackManager(otherPlayer, knockback, 5f));
+            }
         }
     }
 
@@ -88,6 +99,24 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void Respawn()
+    {
+        if(transform.position.y < -30f)
+        {
+            Body.enabled = false;
+            transform.position = SpawnPoint;
+            V_Move = 0f;
+            H_Input = Vector2.zero;
+            MoveDir = Vector2.zero;
+            DashDir = Vector2.right;
+            Speed = 4f;
+            CanDash = true;
+            Jumping = false;
+            Stunned = false;
+            Body.enabled = true;
+        }
+    }
+
     public IEnumerator DashManager()
     {
         CanDash = false;
@@ -95,7 +124,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         Speed = 4f;
 
-        if(Body.isGrounded)
+        if (Body.isGrounded)
         {
             yield return new WaitForSeconds(0.2f);
             CanDash = true;
@@ -107,38 +136,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if (hit.gameObject.CompareTag("Player"))
-        {
-            PlayerController other = hit.gameObject.GetComponent<PlayerController>();
-
-            if (!CanDash)
-            {
-                Vector3 direction = (other.transform.position - transform.position).normalized;
-                StartCoroutine(KnockbackManager(other, direction, 3f, 0.25f));
-            }
-        }
-    }
-
-    private IEnumerator KnockbackManager(PlayerController otherPlayer, Vector3 direction, float force, float duration)
+    private IEnumerator KnockbackManager(PlayerController otherPlayer, Vector3 direction, float force)
     {
         otherPlayer.Stunned = true;
 
         float startTime = Time.time;
-        float endTime = startTime + duration;
-
+        float endTime = startTime + 0.2f;
         do
         {
-            float t = (Time.time - startTime) / duration;
+            float t = (Time.time - startTime) / 0.2f;
             Vector3 velocity = direction * force * (1 - t);
+
             otherPlayer.Body.Move(velocity * Time.deltaTime);
 
             yield return null;
         } while (Time.time < endTime);
-
         yield return new WaitUntil(() => otherPlayer.Body.isGrounded);
-
         otherPlayer.Stunned = false;
     }
 }

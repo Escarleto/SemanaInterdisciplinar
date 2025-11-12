@@ -549,6 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f72328dec1c7c42a0a71a8237d0307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Players: []
   Tile: {fileID: 2900551196179742414, guid: c296e67c9ef622c4fb7f904b29a3c8d8, type: 3}
   CanvasManager: {fileID: 363806979}
   SafeColor: {r: 0, g: 0, b: 0, a: 0}

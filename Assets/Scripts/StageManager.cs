@@ -22,7 +22,6 @@ public class StageManager : MonoBehaviour
                 Tiles.Add(newTile);
             }
         }
-
         GameManager.Instance.NewSafeColor();
     }
 
@@ -34,6 +33,7 @@ public class StageManager : MonoBehaviour
             tile.SetActive(true);
         }
 
+        GameManager.Instance.PlayerRespawn();
         GameManager.Instance.NewSafeColor();
     }
 
