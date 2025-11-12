@@ -7,6 +7,10 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private CharacterController Body;
+    private AudioSource Audio;
+    public AudioClip DashSFX;
+    public AudioClip JumpSFX;
+    public AudioClip FallSFX;
 
     private Vector3 SpawnPoint;
     private Vector2 H_Input;
@@ -22,6 +26,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         Body = GetComponent<CharacterController>();
+        Audio = GetComponent<AudioSource>();
         SpawnPoint = transform.position;
     }
 
@@ -51,6 +56,12 @@ public class PlayerController : MonoBehaviour
         else
         {
             V_Move += Physics.gravity.y * Time.deltaTime;
+        }
+
+        if (transform.position.y < -2f && Audio.clip != FallSFX)
+        {
+            Audio.clip = FallSFX;
+            Audio.Play();
         }
     }
 
@@ -85,6 +96,8 @@ public class PlayerController : MonoBehaviour
         if (ctx.action.triggered && Body.isGrounded)
         {
             Jumping = true;
+            Audio.clip = JumpSFX;
+            Audio.Play();
         }
     }
 
@@ -92,6 +105,8 @@ public class PlayerController : MonoBehaviour
     {
         if (ctx.action.triggered && CanDash)
         {
+            Audio.clip = DashSFX;
+            //Audio.Play();
             if (H_Input != Vector2.zero)
                 DashDir = H_Input;
             StartCoroutine(DashManager());
