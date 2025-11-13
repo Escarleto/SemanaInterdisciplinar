@@ -1,0 +1,9 @@
+.Hi.button {
+    transition-property: scale;
+    transition-duration: 0.2s;
+    scale: 1; /* normal size */
+}
+
+.button.highlight {
+    scale: 1.02; /* just slightly bigger */
+}
