@@ -34,16 +34,18 @@ public class StageManager : MonoBehaviour
         foreach (GameObject tile in Tiles)
         {
             tile.GetComponent<Tile>().ChangeColor();
-            tile.SetActive(true);
 
             if (tile.GetComponent<Renderer>().material.color == safeColor)
             {
                 hasSafeTile = true;
+                Debug.Log("has safe");
             }
+            tile.SetActive(true);
         }
 
         if (!hasSafeTile && Tiles.Count > 0)
         {
+            Debug.Log("does not has safe");
             int randomIndex = Random.Range(0, Tiles.Count);
             Tiles[randomIndex].GetComponent<Tile>().ChangeColor(safeColor);
         }
@@ -51,7 +53,6 @@ public class StageManager : MonoBehaviour
         GameManager.PlayerRespawn();
         GameManager.RestartGameLoop();
     }
-
 
     public void HideUnsafeColors()
     {

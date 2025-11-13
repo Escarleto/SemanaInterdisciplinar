@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public Plaquinha BoardManager;
     public Color SafeColor;
     public int Level = 0;
+    public int PlayersAlive = 0;
     public float TimetoAct = 5f;
     public float TimetoRedraw = 7f;
 
@@ -55,27 +56,40 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        bool AllPlayersReady = false;
         if (Players.Count > 0)
         {
             foreach (PlayerController player in Players)
             {
+                PlayersAlive = Players.Count;
                 if (player.Ready)
                 {
-                    RestartGameLoop();
+                    AllPlayersReady = true;
                 }
-            }
+            } 
+        }
+        if (AllPlayersReady)
+        {
+            RestartGameLoop();
         }
     }
 
     public void RestartGameLoop()
     {
-        Level += 1;
-        HandleDifficulty();
-        SafeColor = ColorList[
-            new List<string>(ColorList.Keys)[UnityEngine.Random.Range(0, ColorList.Count)]
-        ];
-        BoardManager.UpdateColor();
-        CreateTimer(TimetoAct, CanvasManager.HideUnsafeColors);
+        if (PlayersAlive > 1)
+        {
+            Level += 1;
+            HandleDifficulty();
+            SafeColor = ColorList[
+                new List<string>(ColorList.Keys)[UnityEngine.Random.Range(0, ColorList.Count)]
+            ];
+            BoardManager.UpdateColor();
+            CreateTimer(TimetoAct, CanvasManager.HideUnsafeColors);
+        }
+        else if (PlayersAlive == 1)
+        {
+
+        }
     }
 
     public void PlayerRespawn()
@@ -92,32 +106,44 @@ public class GameManager : MonoBehaviour
         {
             case 1:
                 TimetoAct = 7f;
-                TimetoRedraw = 7f;
+                TimetoRedraw = 5f;
                 break;
             case 3:
                 ColorList.Add("Yellow", Color.yellow);
+                TimetoAct = 5f;
+                TimetoRedraw = 4f;
                 break;
             case 4:
-                TimetoAct = 5f;
-                TimetoRedraw = 6f;
+                TimetoAct = 4.5f;
                 break;
             case 5:
                 ColorList.Add("Purple", new Color(0.5f, 0f, 0.5f));
+                TimetoAct = 5.5f;
                 break;
             case 6:
                 ColorList.Add("Orange", new Color(1f, 0.4f, 0f));
                 break;
             case 7:
                 TimetoAct = 6f;
+                TimetoRedraw = 3f;
+                break;
+            case 9:
+                TimetoAct = 7f;
                 TimetoRedraw = 5f;
                 break;
             case 10:
-                TimetoAct = 3.5f;
-                TimetoRedraw = 4f;
+                TimetoAct = 5f;
+                TimetoRedraw = 2.5f;
                 break;
             case 13:
+                TimetoAct = 3.5f;
+                TimetoRedraw = 2f;
+                break;
+            case 16:
                 TimetoAct = 2.5f;
-                TimetoRedraw = 3f;
+                break;
+            case 20:
+                TimetoAct = 2f;
                 break;
         }
     }

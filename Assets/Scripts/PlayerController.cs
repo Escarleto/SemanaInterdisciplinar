@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
 
     public void beReady(InputAction.CallbackContext ctx)
     {
-        if (ctx.action.triggered)
+        if (ctx.action.triggered && !Ready)
         {
             Ready = true;
             GameManager.Instance.StartGame();
@@ -164,7 +164,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            GameManager.Instance.PlayersAlive -= 1;
         }
     }
 
