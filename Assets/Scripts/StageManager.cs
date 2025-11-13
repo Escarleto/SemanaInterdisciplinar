@@ -9,12 +9,17 @@ public class StageManager : MonoBehaviour
     public GameObject Tile;
     public GameObject Pintor;
     private Animator Pintor_animator;
+    private AudioSource Pintor_source;
+
+    public AudioClip audio1;
+    public AudioClip audio2;
     private GameManager GameManager => GameManager.Instance;
     public List<GameObject> Tiles = new List<GameObject>();
 
     void Start()
     {
         Pintor_animator = Pintor.GetComponent<Animator>();
+        Pintor_source = Pintor.GetComponent<AudioSource>();
         for (int i = 0; i < 5; i++)
         {
             for (int j = 0; j < 7; j++)
@@ -58,6 +63,8 @@ public class StageManager : MonoBehaviour
             Tiles[randomIndex].GetComponent<Tile>().ChangeColor(safeColor);
         }
 
+        Pintor_source.clip = audio1;
+        Pintor_source.Play();
         Pintor_animator.SetBool("Pintor_Desenha", false);
         GameManager.PlayerRespawn();
     }
@@ -72,6 +79,8 @@ public class StageManager : MonoBehaviour
             }
         }
 
+        Pintor_source.clip = audio2;
+        Pintor_source.Play();
         Pintor_animator.SetBool("Pintor_Desenha", true);
         GameManager.CreateTimer(GameManager.TimetoRedraw, RedrawTiles);
     }
