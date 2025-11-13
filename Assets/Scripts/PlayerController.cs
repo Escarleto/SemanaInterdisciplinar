@@ -181,7 +181,7 @@ public class PlayerController : MonoBehaviour
 
     public void RespawnHandler()
     {
-        if(HP > 0)
+        if(HP > 0 && !CanFall)
         {
             transform.position = SpawnPoint;
             Body.enabled = true;

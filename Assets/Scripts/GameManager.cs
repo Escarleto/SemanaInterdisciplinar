@@ -133,14 +133,14 @@ public class GameManager : MonoBehaviour
                 TimetoRedraw = 2.5f;
                 break;
             case 13:
-                TimetoAct = 3.5f;
+                TimetoAct = 4f;
                 TimetoRedraw = 2f;
                 break;
             case 16:
-                TimetoAct = 2.5f;
+                TimetoAct = 3.5f;
                 break;
             case 20:
-                TimetoAct = 2f;
+                TimetoAct = 3f;
                 break;
         }
     }
