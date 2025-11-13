@@ -10,22 +10,11 @@ public class Plaquinha : MonoBehaviour
     private TextMeshPro textmesh;
     public Color safecolor;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SplashL.SetActive(false);
         SplashR.SetActive(false);
         SplashC.SetActive(true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        /*Color SafeColor = GameManager.Instance.SafeColor;
-
-        safecolor = SafeColor;
-
-        Splash.GetComponent<SpriteRenderer>().color = SafeColor;*/
     }
 
     public void UpdateColor()

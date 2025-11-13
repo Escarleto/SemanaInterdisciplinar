@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Threading;
 using TreeEditor;
 using UnityEditor;
@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController Body;
     private AudioSource Audio;
     private TrailRenderer Trail;
+    public HealthManager HealthManager;
     public GameObject[] Skins; 
     public AudioClip DashSFX;
     public AudioClip JumpSFX;
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
     private float Speed = 4f;
     public int HP = 3;
     public int PlayerID;
+
     public bool Ready = false;
     private bool Jumping = false;
     private bool CanDash = true;
@@ -36,6 +38,7 @@ public class PlayerController : MonoBehaviour
         Audio = GetComponent<AudioSource>();
         Trail = GetComponent<TrailRenderer>();
         SpawnPoint = transform.position;
+        HealthManager.PlayerID = PlayerID;
 
         for (int i = 0; i < Skins.Length; i++)
         {
@@ -153,6 +156,7 @@ public class PlayerController : MonoBehaviour
             if (transform.position.y < -5f)
             {
                 HP -= 1;
+                HealthManager.UpdateHP(this);
                 Body.enabled = false;
                 transform.position = SpawnPoint;
                 V_Move = 0f;
