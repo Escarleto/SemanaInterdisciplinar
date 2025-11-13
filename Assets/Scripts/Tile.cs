@@ -11,13 +11,17 @@ public class Tile : MonoBehaviour
         Mat = GetComponent<Renderer>().material;
     }
 
-    public void ChangeColor()
+    public void ChangeColor(Color? forcedColor = null)
     {
-        Dictionary<string, Color> colorList = GameManager.Instance.ColorList;
-        Color randomColor = colorList[
-            new List<string>(colorList.Keys)[Random.Range(0, colorList.Count)]
-        ];
+        if (forcedColor.HasValue)
+        {
+            Mat.color = forcedColor.Value;
+            return;
+        }
 
-        Mat.color = randomColor;
+        Dictionary<string, Color> colorList = GameManager.Instance.ColorList;
+        List<string> keys = new List<string>(colorList.Keys);
+        Mat.color = colorList[keys[Random.Range(0, keys.Count)]];
     }
+
 }

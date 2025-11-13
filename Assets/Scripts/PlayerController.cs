@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Threading;
 using TreeEditor;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,9 +9,11 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController Body;
     private AudioSource Audio;
+    public GameObject[] Skins; 
     public AudioClip DashSFX;
     public AudioClip JumpSFX;
     public AudioClip FallSFX;
+    public AudioClip StunnedSFX;
 
     private Vector3 SpawnPoint;
     private Vector2 H_Input;
@@ -19,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private float V_Move;
     private float Speed = 4f;
     public int HP = 3;
+    public int PlayerID;
+    public bool Ready = false;
     private bool Jumping = false;
     private bool CanDash = true;
     private bool Stunned = false;
@@ -28,11 +33,23 @@ public class PlayerController : MonoBehaviour
         Body = GetComponent<CharacterController>();
         Audio = GetComponent<AudioSource>();
         SpawnPoint = transform.position;
+
+        for (int i = 0; i < Skins.Length; i++)
+        {
+            if (i == PlayerID)
+            {
+                TrailRenderer trail = GetComponent<TrailRenderer>();
+                Material[] mats = trail.materials;
+                mats[0] = Skins[i].GetComponentInChildren<Renderer>().material;
+                trail.materials = mats;
+
+                Skins[i].SetActive(true);
+            }
+        }
     }
 
     void Update()
     {
-
         if (CanDash)
         {
             MoveDir = (H_Input * Speed);
@@ -72,6 +89,9 @@ public class PlayerController : MonoBehaviour
             PlayerController otherPlayer = hit.gameObject.GetComponent<PlayerController>();
             if (!CanDash)
             {
+                Audio.clip = StunnedSFX;
+                Audio.Play();
+
                 Vector3 knockback = (hit.gameObject.transform.position - transform.position).normalized;
                 otherPlayer.StartCoroutine(otherPlayer.KnockbackManager(otherPlayer, knockback, 5f));
             }
@@ -106,10 +126,19 @@ public class PlayerController : MonoBehaviour
         if (ctx.action.triggered && CanDash)
         {
             Audio.clip = DashSFX;
-            //Audio.Play();
+            Audio.Play();
             if (H_Input != Vector2.zero)
                 DashDir = H_Input;
             StartCoroutine(DashManager());
+        }
+    }
+
+    public void beReady(InputAction.CallbackContext ctx)
+    {
+        if (ctx.action.triggered)
+        {
+            Ready = true;
+            GameManager.Instance.StartGame();
         }
     }
 
@@ -117,7 +146,7 @@ public class PlayerController : MonoBehaviour
     {
         if (HP > 0)
         {
-            if (transform.position.y < -30f)
+            if (transform.position.y < -5f)
             {
                 HP -= 1;
                 Body.enabled = false;
