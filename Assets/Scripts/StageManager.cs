@@ -27,9 +27,6 @@ public class StageManager : MonoBehaviour
                 //Pintor_animator.SetBool("Pintor_vira", true);
             }
         }
-        //GameManager.Instance.RestartGameLoop();
-
-       
     }
 
     public void RedrawTiles()
@@ -46,14 +43,12 @@ public class StageManager : MonoBehaviour
             if (tile.GetComponent<Renderer>().material.color == safeColor)
             {
                 hasSafeTile = true;
-                Debug.Log("HasSafe Tiles");
             }
                 tile.SetActive(true);
         }
 
         if (!hasSafeTile && Tiles.Count > 0)
         {
-            Debug.Log("NOT Safe Tiles");
             int randomIndex = Random.Range(0, Tiles.Count);
             Tiles[randomIndex].GetComponent<Tile>().ChangeColor(safeColor);
         }
