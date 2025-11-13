@@ -7,11 +7,14 @@ using UnityEngine.UIElements;
 public class StageManager : MonoBehaviour
 {
     public GameObject Tile;
+    public GameObject Pintor;
+    private Animator Pintor_animator;
     private GameManager GameManager => GameManager.Instance;
     public List<GameObject> Tiles = new List<GameObject>();
 
     void Start()
     {
+        Pintor_animator = Pintor.GetComponent<Animator>();
         for (int i = 0; i < 5; i++)
         {
             for (int j = 0; j < 7; j++)
@@ -21,9 +24,12 @@ public class StageManager : MonoBehaviour
                 newTile.GetComponent<Tile>().ChangeColor();
 
                 Tiles.Add(newTile);
+                //Pintor_animator.SetBool("Pintor_vira", true);
             }
         }
         //GameManager.Instance.RestartGameLoop();
+
+       
     }
 
     public void RedrawTiles()
@@ -52,6 +58,7 @@ public class StageManager : MonoBehaviour
             Tiles[randomIndex].GetComponent<Tile>().ChangeColor(safeColor);
         }
 
+        Pintor_animator.SetBool("Pintor_Desenha", false);
         GameManager.PlayerRespawn();
     }
 
@@ -65,6 +72,7 @@ public class StageManager : MonoBehaviour
             }
         }
 
+        Pintor_animator.SetBool("Pintor_Desenha", true);
         GameManager.CreateTimer(GameManager.TimetoRedraw, RedrawTiles);
     }
 }
