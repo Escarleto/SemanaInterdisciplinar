@@ -59,6 +59,7 @@ public class StageManager : MonoBehaviour
         }
 
         Pintor_source.clip = audio1;
+        Pintor_source.pitch = Random.Range(0.8f, 1.2f);
         Pintor_source.Play();
         Pintor_animator.SetBool("Pintor_Desenha", false);
         GameManager.PlayerRespawn();
@@ -75,6 +76,7 @@ public class StageManager : MonoBehaviour
         }
 
         Pintor_source.clip = audio2;
+        Pintor_source.pitch = Random.Range(0.8f, 1.2f);
         Pintor_source.Play();
         Pintor_animator.SetBool("Pintor_Desenha", true);
         GameManager.CreateTimer(GameManager.TimetoRedraw, RedrawTiles);
