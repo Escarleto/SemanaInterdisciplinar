@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         bool AllPlayersReady = false;
-        if (Players.Count > 0)
+        if (Players.Count > 1)
         {
             foreach (PlayerController player in Players)
             {
@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGameLoop()
     {
-        if (PlayersAlive > 0)
+        if (PlayersAlive > 1)
         {
             Level += 1;
             HandleDifficulty();
@@ -87,17 +87,13 @@ public class GameManager : MonoBehaviour
             BoardManager.UpdateColor();
             CreateTimer(TimetoAct, CanvasManager.HideUnsafeColors);
         }
-        else if (PlayersAlive == 1)
-        {
-
-        }
     }
 
     public void PlayerRespawn()
     {
         foreach (PlayerController player in Players)
         {
-            player.HP_Handler();
+            player.RespawnHandler();
         }
     }
 

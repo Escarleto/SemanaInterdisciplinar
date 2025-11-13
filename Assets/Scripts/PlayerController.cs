@@ -11,14 +11,14 @@ public class PlayerController : MonoBehaviour
     private AudioSource Audio;
     private TrailRenderer Trail;
     public HealthManager HealthManager;
-    public GameObject[] Skins; 
+    public GameObject[] Skins;
     public AudioClip DashSFX;
     public AudioClip JumpSFX;
     public AudioClip FallSFX;
     public AudioClip StunnedSFX;
     public AudioClip[] SkinSFX;
 
-    private Vector3 SpawnPoint;
+    public Vector3 SpawnPoint;
     private Vector2 H_Input;
     private Vector2 MoveDir;
     private Vector2 DashDir = Vector2.right;
@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     public int PlayerID;
 
     public bool Ready = false;
+    private bool CanFall = false;
     private bool Jumping = false;
     private bool CanDash = true;
     private bool Stunned = false;
@@ -86,10 +87,16 @@ public class PlayerController : MonoBehaviour
             Trail.emitting = false;
             V_Move += Physics.gravity.y * Time.deltaTime;
         }
-        
-        if (transform.position.y < -5f && Audio.clip != FallSFX)
+
+        if (transform.position.y < -10f && CanFall)
         {
+            HP_Handler();
             Sound_Handler(FallSFX);
+            CanFall = false;
+        }
+        else if (transform.position.y > -10f)
+        {
+            CanFall = true;
         }
     }
 
@@ -153,27 +160,31 @@ public class PlayerController : MonoBehaviour
     {
         if (HP > 0)
         {
-            if (transform.position.y < -5f)
-            {
-                HP -= 1;
-                HealthManager.UpdateHP(this);
-                Body.enabled = false;
-                transform.position = SpawnPoint;
-                V_Move = 0f;
-                H_Input = Vector2.zero;
-                MoveDir = Vector2.zero;
-                DashDir = Vector2.right;
-                Speed = 4f;
-                CanDash = true;
-                Jumping = false;
-                Stunned = false;
-                Body.enabled = true;
-            }
+            HP -= 1;
+            HealthManager.UpdateHP(this);
+            Body.enabled = false;
+            V_Move = 0f;
+            H_Input = Vector2.zero;
+            MoveDir = Vector2.zero;
+            DashDir = Vector2.right;
+            Speed = 4f;
+            CanDash = true;
+            Jumping = false;
+            Stunned = false;
         }
         else
         {
             Body.enabled = false;
             GameManager.Instance.PlayersAlive -= 1;
+        }
+    }
+
+    public void RespawnHandler()
+    {
+        if(HP > 0)
+        {
+            transform.position = SpawnPoint;
+            Body.enabled = true;
         }
     }
 
