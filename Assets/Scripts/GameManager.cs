@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
             SafeColor = ColorList[
                 new List<string>(ColorList.Keys)[UnityEngine.Random.Range(0, ColorList.Count)]
             ];
+
             BoardManager.UpdateColor();
             CreateTimer(TimetoAct, CanvasManager.HideUnsafeColors);
         }

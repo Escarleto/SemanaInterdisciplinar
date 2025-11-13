@@ -28,6 +28,8 @@ public class StageManager : MonoBehaviour
 
     public void RedrawTiles()
     {
+        GameManager.RestartGameLoop();
+
         Color safeColor = GameManager.Instance.SafeColor;
         bool hasSafeTile = false;
 
@@ -38,20 +40,19 @@ public class StageManager : MonoBehaviour
             if (tile.GetComponent<Renderer>().material.color == safeColor)
             {
                 hasSafeTile = true;
-                Debug.Log("has safe");
+                Debug.Log("HasSafe Tiles");
             }
-            tile.SetActive(true);
+                tile.SetActive(true);
         }
 
         if (!hasSafeTile && Tiles.Count > 0)
         {
-            Debug.Log("does not has safe");
+            Debug.Log("NOT Safe Tiles");
             int randomIndex = Random.Range(0, Tiles.Count);
             Tiles[randomIndex].GetComponent<Tile>().ChangeColor(safeColor);
         }
 
         GameManager.PlayerRespawn();
-        GameManager.RestartGameLoop();
     }
 
     public void HideUnsafeColors()

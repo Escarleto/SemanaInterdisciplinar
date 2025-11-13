@@ -9,11 +9,13 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController Body;
     private AudioSource Audio;
+    private TrailRenderer Trail;
     public GameObject[] Skins; 
     public AudioClip DashSFX;
     public AudioClip JumpSFX;
     public AudioClip FallSFX;
     public AudioClip StunnedSFX;
+    public AudioClip[] SkinSFX;
 
     private Vector3 SpawnPoint;
     private Vector2 H_Input;
@@ -32,16 +34,16 @@ public class PlayerController : MonoBehaviour
     {
         Body = GetComponent<CharacterController>();
         Audio = GetComponent<AudioSource>();
+        Trail = GetComponent<TrailRenderer>();
         SpawnPoint = transform.position;
 
         for (int i = 0; i < Skins.Length; i++)
         {
             if (i == PlayerID)
             {
-                TrailRenderer trail = GetComponent<TrailRenderer>();
-                Material[] mats = trail.materials;
+                Material[] mats = Trail.materials;
                 mats[0] = Skins[i].GetComponentInChildren<Renderer>().material;
-                trail.materials = mats;
+                Trail.materials = mats;
 
                 Skins[i].SetActive(true);
             }
@@ -50,6 +52,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (!Body.enabled)
+        {
+            return;
+        }
+
         if (CanDash)
         {
             MoveDir = (H_Input * Speed);
@@ -63,6 +70,7 @@ public class PlayerController : MonoBehaviour
 
         if (Body.isGrounded)
         {
+            Trail.emitting = true;
             V_Move = -1f;
             if (Jumping)
             {
@@ -72,13 +80,13 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            Trail.emitting = false;
             V_Move += Physics.gravity.y * Time.deltaTime;
         }
-
-        if (transform.position.y < -2f && Audio.clip != FallSFX)
+        
+        if (transform.position.y < -5f && Audio.clip != FallSFX)
         {
-            Audio.clip = FallSFX;
-            Audio.Play();
+            Sound_Handler(FallSFX);
         }
     }
 
@@ -89,9 +97,7 @@ public class PlayerController : MonoBehaviour
             PlayerController otherPlayer = hit.gameObject.GetComponent<PlayerController>();
             if (!CanDash)
             {
-                Audio.clip = StunnedSFX;
-                Audio.Play();
-
+                Sound_Handler(StunnedSFX);
                 Vector3 knockback = (hit.gameObject.transform.position - transform.position).normalized;
                 otherPlayer.StartCoroutine(otherPlayer.KnockbackManager(otherPlayer, knockback, 5f));
             }
@@ -116,8 +122,7 @@ public class PlayerController : MonoBehaviour
         if (ctx.action.triggered && Body.isGrounded)
         {
             Jumping = true;
-            Audio.clip = JumpSFX;
-            Audio.Play();
+            Sound_Handler(JumpSFX);
         }
     }
 
@@ -125,8 +130,7 @@ public class PlayerController : MonoBehaviour
     {
         if (ctx.action.triggered && CanDash)
         {
-            Audio.clip = DashSFX;
-            Audio.Play();
+            Sound_Handler(DashSFX);
             if (H_Input != Vector2.zero)
                 DashDir = H_Input;
             StartCoroutine(DashManager());
@@ -164,8 +168,16 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            Body.enabled = false;
             GameManager.Instance.PlayersAlive -= 1;
         }
+    }
+
+    private void Sound_Handler(AudioClip clip)
+    {
+        Audio.clip = clip;
+        Audio.pitch = Random.Range(0.8f, 1.2f);
+        Audio.Play();
     }
 
     public IEnumerator DashManager()
@@ -195,6 +207,8 @@ public class PlayerController : MonoBehaviour
         float endTime = startTime + 0.2f;
         do
         {
+            if (!otherPlayer.Body.enabled) yield break;
+
             float t = (Time.time - startTime) / 0.2f;
             Vector3 velocity = direction * force * (1 - t);
 
