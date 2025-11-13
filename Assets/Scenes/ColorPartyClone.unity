@@ -1096,6 +1096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Raiva
       objectReference: {fileID: 0}
+    - target: {fileID: 4963907248946969163, guid: 702a1465c2fa7b841b00c29ac39a1af5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5739987238629417201, guid: 702a1465c2fa7b841b00c29ac39a1af5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.08
@@ -1328,6 +1332,7 @@ MonoBehaviour:
   BoardManager: {fileID: 2049217546}
   SafeColor: {r: 0, g: 0, b: 0, a: 0}
   Level: 0
+  PlayersAlive: 0
   TimetoAct: 5
   TimetoRedraw: 7
 --- !u!114 &2039932940

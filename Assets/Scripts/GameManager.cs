@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGameLoop()
     {
-        if (PlayersAlive > 1)
+        if (PlayersAlive > 0)
         {
             Level += 1;
             HandleDifficulty();
