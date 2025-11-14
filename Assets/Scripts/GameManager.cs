@@ -57,8 +57,9 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        AudioSource Music = GetComponent<AudioSource>();
         bool AllPlayersReady = false;
-        if (Players.Count > 1)
+        if (Players.Count > 0)
         {
             foreach (PlayerController player in Players)
             {
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour
         }
         if (AllPlayersReady)
         {
+            Music.enabled = true;
             RestartGameLoop();
             TimerUI.enabled = true;
             TimerUI.ResetTimer();
@@ -79,9 +81,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGameLoop()
     {
-        Debug.Log(PlayersAlive);
-
-        if (PlayersAlive > 1)
+        if (PlayersAlive > 0)
         {
             Level += 1;
             HandleDifficulty();
