@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         AudioSource Music = GetComponent<AudioSource>();
         bool AllPlayersReady = false;
-        if (Players.Count > 0)
+        if (Players.Count > 1)
         {
             foreach (PlayerController player in Players)
             {
@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGameLoop()
     {
-        if (PlayersAlive > 0)
+        if (PlayersAlive > 1)
         {
             Level += 1;
             HandleDifficulty();
