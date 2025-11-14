@@ -5,41 +5,22 @@ using UnityEngine.EventSystems;
 
 public class StartButtonScriptCanvas : MonoBehaviour
 {
-    public Button buttonStart;   // assign in Inspector
-    public Button buttonInfo;    // assign in Inspector
-    public GameObject tutorial;  // assign in Inspector
-
-    private bool ignoreInputThisFrame;
+    public Button buttonStart;
+    public Button buttonInfo;
+    public GameObject tutorial;
+    public Button buttonTutorial;
+    public Button emptyButton;
 
     private void Awake()
     {
-        // Register listeners for clicks
         buttonStart.onClick.AddListener(OnPlayGameClick);
         buttonInfo.onClick.AddListener(OnInfoClick);
+        buttonTutorial.onClick.AddListener(OnTutorialClick);
 
-        // Make sure tutorial is hidden initially
-        if (tutorial != null)
-            tutorial.SetActive(false);
+        tutorial.SetActive(false);
     }
 
-    private void OnDestroy()
-    {
-        // Clean up listeners
-        buttonStart.onClick.RemoveListener(OnPlayGameClick);
-        buttonInfo.onClick.RemoveListener(OnInfoClick);
-    }
 
-    private void Update()
-{
-    if (tutorial != null && tutorial.activeSelf)
-    {
-        if (ignoreInputThisFrame)
-            return;
-
-        if (Input.GetMouseButtonDown(0))
-            tutorial.SetActive(false);
-    }
-}
 
 
     private void OnPlayGameClick()
@@ -50,20 +31,14 @@ public class StartButtonScriptCanvas : MonoBehaviour
 
     private void OnInfoClick()
     {
-        if (tutorial != null)
-        {
-            tutorial.SetActive(true);
-
-            if (EventSystem.current != null)
-                EventSystem.current.SetSelectedGameObject(null);
-
-            ignoreInputThisFrame = true;
-            StartCoroutine(ResetIgnoreInput());
-        }
+        tutorial.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(buttonTutorial.gameObject);
     }
-    private System.Collections.IEnumerator ResetIgnoreInput()
+
+    private void OnTutorialClick()
     {
-        yield return null; // wait one frame
-        ignoreInputThisFrame = false;
+       tutorial.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(emptyButton.gameObject);
     }
 }
+

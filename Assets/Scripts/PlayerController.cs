@@ -172,11 +172,6 @@ public class PlayerController : MonoBehaviour
             Jumping = false;
             Stunned = false;
         }
-        else
-        {
-            Body.enabled = false;
-            GameManager.Instance.PlayersAlive -= 1;
-        }
     }
 
     public void RespawnHandler()

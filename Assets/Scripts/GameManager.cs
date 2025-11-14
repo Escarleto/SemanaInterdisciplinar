@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public List<PlayerController> Players = new List<PlayerController>();
     public GameObject Tile;
     public StageManager CanvasManager;
+    public TimerScript TimerUI;
     public Plaquinha BoardManager;
     public Color SafeColor;
     public int Level = 0;
@@ -71,11 +72,15 @@ public class GameManager : MonoBehaviour
         if (AllPlayersReady)
         {
             RestartGameLoop();
+            TimerUI.enabled = true;
+            TimerUI.ResetTimer();
         }
     }
 
     public void RestartGameLoop()
     {
+        Debug.Log(PlayersAlive);
+
         if (PlayersAlive > 1)
         {
             Level += 1;
@@ -85,6 +90,8 @@ public class GameManager : MonoBehaviour
             ];
 
             BoardManager.UpdateColor();
+            TimerUI.enabled = true;
+            TimerUI.ResetTimer();
             CreateTimer(TimetoAct, CanvasManager.HideUnsafeColors);
         }
     }

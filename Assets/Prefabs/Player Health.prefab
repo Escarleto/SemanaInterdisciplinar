@@ -164,7 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f69f412c3e151f44ab34e4698aafaa96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 139
   Hearts:
   - {fileID: 191948979032476759}
   - {fileID: 5815644788793038421}
@@ -174,6 +173,7 @@ MonoBehaviour:
   - {fileID: -612816146, guid: 83cb8cf206496fc42a7e7d15462b91cb, type: 3}
   - {fileID: 1992265109, guid: 83cb8cf206496fc42a7e7d15462b91cb, type: 3}
   - {fileID: -889275996, guid: 83cb8cf206496fc42a7e7d15462b91cb, type: 3}
+  - {fileID: -1399127405, guid: 83cb8cf206496fc42a7e7d15462b91cb, type: 3}
   PlayerID: 0
 --- !u!222 &154338282646049645
 CanvasRenderer:

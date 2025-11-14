@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
-    public float x = 0f;
-    public float y = 0f;
-
     public GameObject[] Hearts;
     public Sprite[] PlayerIcons;
     private RectTransform rctransform;
@@ -30,7 +27,7 @@ public class HealthManager : MonoBehaviour
 
     public void UpdateHP(PlayerController player)
     {
-        if (currentHP != player.HP && currentHP > 0)
+        if (currentHP != player.HP && currentHP > 1)
         {
             Animator HeartBreak = Hearts[currentHP - 1].GetComponent<Animator>();
             HeartBreak.enabled = true;
@@ -39,7 +36,10 @@ public class HealthManager : MonoBehaviour
         }
         else
         {
-            return;
+            GetComponent<Image>().sprite = PlayerIcons[4];
+            GameManager.Instance.PlayersAlive -= 1;
+            Animator HeartBreak = Hearts[currentHP - 1].GetComponent<Animator>();
+            HeartBreak.enabled = true;
         }
     }
 

@@ -167,6 +167,7 @@ MonoBehaviour:
   FallSFX: {fileID: 8300000, guid: a64e1d4c2cd792c429e0d3ecfff76b93, type: 3}
   StunnedSFX: {fileID: 8300000, guid: 4c3694004cb198d408e70407056d946a, type: 3}
   SkinSFX: []
+  SpawnPoint: {x: 0, y: 0, z: 0}
   HP: 3
   PlayerID: 0
   Ready: 0
@@ -586,6 +587,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8970627176590395593}
     m_Modifications:
+    - target: {fileID: 3081828037007338345, guid: dc970aa6af0e10745abf71285465ff5d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461218499793896292, guid: dc970aa6af0e10745abf71285465ff5d, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5968899101243757478, guid: dc970aa6af0e10745abf71285465ff5d, type: 3}
       propertyPath: m_Name
       value: nojo
@@ -786,6 +795,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8970627176590395593}
     m_Modifications:
+    - target: {fileID: 3161513583803493001, guid: 702a1465c2fa7b841b00c29ac39a1af5, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391650690990686852, guid: 702a1465c2fa7b841b00c29ac39a1af5, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391650690990686852, guid: 702a1465c2fa7b841b00c29ac39a1af5, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391650690990686852, guid: 702a1465c2fa7b841b00c29ac39a1af5, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391650690990686852, guid: 702a1465c2fa7b841b00c29ac39a1af5, type: 3}
+      propertyPath: m_SkinnedMotionVectors
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4963907248946969163, guid: 702a1465c2fa7b841b00c29ac39a1af5, type: 3}
       propertyPath: m_Name
       value: Raiva
@@ -873,6 +902,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8970627176590395593}
     m_Modifications:
+    - target: {fileID: 3425885333130331501, guid: 7207fe5abb6c3aa499d5d8dd6f7b3079, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4082095645198970208, guid: 7207fe5abb6c3aa499d5d8dd6f7b3079, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6312393913677479330, guid: 7207fe5abb6c3aa499d5d8dd6f7b3079, type: 3}
       propertyPath: m_Name
       value: Ansi
@@ -1023,6 +1060,14 @@ PrefabInstance:
     - target: {fileID: 4601982323623201249, guid: b85bc53d6e890f34ea241594a1bd7354, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514453750986664852, guid: b85bc53d6e890f34ea241594a1bd7354, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6605358622041293721, guid: b85bc53d6e890f34ea241594a1bd7354, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
